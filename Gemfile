@@ -9,11 +9,8 @@ gem 'rails_autolink'
 gem 'protected_attributes'
 
 gem 'sqlite3'
-#rails 4 stuff
+
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
-gem 'rails-backbone'
-gem 'marionette-rails'
 
 #deploy and config
 gem 'figaro'
