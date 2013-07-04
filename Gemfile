@@ -64,35 +64,8 @@ gem 'will_paginate', github: 'mislav/will_paginate'
 gem 'intercom-rails'
 
 
-group :development do
-  gem 'heroku_san'
-  gem 'guard-spork'
-  gem 'guard-rspec'
-  gem 'quiet_assets'
-  gem 'rb-fsevent'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
-  gem 'oink'
-  gem 'mailcatcher'
-end
 
-group :test, :development do
-  gem 'rspec-rails', '~> 2.0'
-  gem 'capybara'
-  gem 'rspec-instafail'
-  gem 'debugger'
-  gem 'jasmine'
-  gem 'database_cleaner'
-  gem 'launchy'
-  gem 'fuubar'
-  gem 'pry'
-  gem 'pry-debugger'
-  gem 'method_info'
-end
-
-
-gem 'sass-rails',   '~> 4.0.0.rc1'
+gem 'sass-rails',   '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 
