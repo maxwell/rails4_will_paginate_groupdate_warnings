@@ -1,71 +1,8 @@
 GIT
-  remote: git://github.com/BackerKit/filepicker-rails.git
-  revision: 2028d679dfbe7eeb591782e58aa4d5caa9e64c93
-  specs:
-    filepicker-rails (0.1)
-      multi_json (~> 1.6)
-      railties (>= 3.1.0, < 5.0)
-
-GIT
-  remote: git://github.com/airblade/paper_trail.git
-  revision: 1baead241804bbe476a8fa89b24ab4bdcb6d0c95
-  branch: rails4
-  specs:
-    paper_trail (2.7.2)
-      activerecord (~> 4.0)
-      railties (~> 4.0)
-
-GIT
-  remote: git://github.com/hexorx/countries.git
-  revision: 8a525c7964132f97f89a6ad178ae32c5187dae8b
-  specs:
-    countries (0.9.1)
-      currencies (~> 0.4.2)
-
-GIT
-  remote: git://github.com/jodosha/redis-store.git
-  revision: f445272b30ae3030b942a9a10681c2672d04b39b
-  specs:
-    redis-actionpack (3.2.3)
-      actionpack (>= 3.2.3)
-      redis-rack (~> 1.4.0)
-      redis-store (~> 1.1.0)
-    redis-activesupport (3.2.3)
-      activesupport (>= 3.2.3)
-      redis-store (~> 1.1.0)
-    redis-rack (1.4.2)
-      rack (~> 1.4)
-      redis-store (~> 1.1.0)
-    redis-store (1.1.3)
-      redis (>= 2.2)
-
-GIT
   remote: git://github.com/mislav/will_paginate.git
   revision: 7a45eab080ff0da7917ac4f6e76cfb2db29d90b1
   specs:
     will_paginate (3.0.4)
-
-GIT
-  remote: git://github.com/mixonic/ranked-model.git
-  revision: 8683040676aa576f993d10169faf204ef622c815
-  specs:
-    ranked-model (0.2.1)
-      activerecord (>= 3.1.12)
-
-GIT
-  remote: git://github.com/plataformatec/simple_form.git
-  revision: dcf4862972792abafeefd73f6b1d385322a64115
-  specs:
-    simple_form (3.0.0.rc)
-      actionpack (>= 4.0.0, < 4.1)
-      activemodel (>= 4.0.0, < 4.1)
-
-GIT
-  remote: git://github.com/railstutorial/spork-rails.git
-  revision: 5db525af2f917047057f546bc1ac2574d1c6b11e
-  specs:
-    spork-rails (3.2.1)
-      spork (>= 1.0rc0)
 
 GEM
   remote: https://rubygems.org/
@@ -134,7 +71,6 @@ GEM
     columnize (0.3.6)
     connection_pool (1.1.0)
     country_select (1.1.3)
-    currencies (0.4.2)
     daemons (1.1.9)
     database_cleaner (1.0.1)
     debug_inspector (0.0.2)
@@ -161,8 +97,6 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.7)
       multipart-post (~> 1.1)
-    faraday_middleware (0.9.0)
-      faraday (>= 0.7.4, < 0.9)
     ffi (1.9.0)
     figaro (0.7.0)
       bundler (~> 1.0)
@@ -353,10 +287,6 @@ GEM
     redis (3.0.4)
     redis-namespace (1.3.0)
       redis (~> 3.0.0)
-    redis-rails (3.2.2)
-      redis-actionpack (~> 3.2.2)
-      redis-activesupport (~> 3.2.2)
-      redis-store (~> 1.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rmagick (2.13.2)
@@ -466,16 +396,12 @@ DEPENDENCIES
   carrierwave
   chartkick
   coffee-rails (~> 4.0.0)
-  countries!
   country_select
   database_cleaner
   debugger
   devise (= 3.0.0rc)
   devise-async
-  faraday
-  faraday_middleware
   figaro
-  filepicker-rails!
   fog (~> 1.3.1)
   fuubar
   groupdate
@@ -495,7 +421,6 @@ DEPENDENCIES
   newrelic_rpm
   oink
   omniauth-stripe-connect
-  paper_trail!
   prawn
   protected_attributes
   pry
@@ -506,20 +431,15 @@ DEPENDENCIES
   rack-rewrite
   rails (= 4.0.0)
   rails_autolink
-  ranked-model!
   rb-fsevent
-  redis-rails (> 3.2.1)
-  redis-store!
   rmagick
   rspec-instafail
   rspec-rails (~> 2.0)
   sass-rails (~> 4.0.0.rc1)
   sidekiq
   sidekiq-failures
-  simple_form!
   sinatra
   slim
-  spork-rails!
   sqlite3
   state_machine
   stripe

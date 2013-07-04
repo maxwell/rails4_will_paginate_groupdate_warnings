@@ -27,8 +27,6 @@ gem 'sinatra', :require => nil
 gem 'slim'
 gem 'rack-rewrite'
 
-gem 'redis-store', github: 'jodosha/redis-store'
-gem 'redis-rails', '> 3.2.1'
 
 #authentication
 gem 'devise', '3.0.0rc'
@@ -36,21 +34,17 @@ gem "devise-async"
 
 #file uploads
 gem 'rmagick'
-gem 'carrierwave  '
+gem 'carrierwave'
 gem 'fog', '~> 1.3.1'
 
 gem 'prawn'
-gem 'ranked-model', github: 'mixonic/ranked-model'
 
 # forms
-gem 'simple_form', github: 'plataformatec/simple_form'
-gem 'countries', github: 'hexorx/countries'
 gem 'country_select'
 gem 'honeybadger'
 
 #misc
 gem 'mechanize'
-gem 'paper_trail', github: 'airblade/paper_trail', branch: 'rails4'
 gem 'markerb'
 gem 'newrelic_rpm'
 gem 'stripe'
@@ -62,7 +56,6 @@ gem 'state_machine'
 
 gem 'rack-google-analytics'
 
-gem 'filepicker-rails', git: 'git://github.com/BackerKit/filepicker-rails.git'
 gem 'omniauth-stripe-connect'
 
 gem 'puma'
@@ -71,8 +64,6 @@ gem 'will_paginate', github: 'mislav/will_paginate'
 gem 'intercom-rails'
 
 
-gem 'faraday'
-gem 'faraday_middleware'
 group :development do
   gem 'heroku_san'
   gem 'guard-spork'
@@ -91,7 +82,6 @@ group :test, :development do
   gem 'capybara'
   gem 'rspec-instafail'
   gem 'debugger'
-  gem 'spork-rails', github: 'railstutorial/spork-rails'
   gem 'jasmine'
   gem 'database_cleaner'
   gem 'launchy'
