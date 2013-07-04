@@ -15,11 +15,9 @@ gem 'jquery-rails'
 #deploy and config
 gem 'figaro'
 
-gem 'foreman'
 
 gem 'groupdate'
 gem 'chartkick'
-gem 'faker'
 
 # background worker stuff
 gem 'sidekiq'
@@ -38,7 +36,7 @@ gem "devise-async"
 
 #file uploads
 gem 'rmagick'
-gem 'carrierwave'
+gem 'carrierwave  '
 gem 'fog', '~> 1.3.1'
 
 gem 'prawn'
