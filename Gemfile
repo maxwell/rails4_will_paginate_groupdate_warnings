@@ -15,7 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 #if you have both of these gems, you get deprication warnings
 gem 'groupdate'
 
-gem 'will_paginate', github: 'mislav/will_paginate'
+gem 'will_paginate'
 
 
 
