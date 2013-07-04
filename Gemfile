@@ -106,18 +106,9 @@ group :test, :development do
   gem 'method_info'
 end
 
-group :test do
-  gem 'factory_girl_rails', '~> 4.0'
-end
 
 gem 'sass-rails',   '~> 4.0.0.rc1'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
-
-gem 'bootstrap-sass', '~> 2.3.0.1'
-gem 'font-awesome-sass-rails' 
-gem "asset_sync"
-
-gem 'handlebars_assets', '0.12.3'
 
 
