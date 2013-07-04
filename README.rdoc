@@ -1,28 +1,37 @@
-== README
+Tracking down warnings on Rails 4
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+When trying to update my existing Rails 4 app, I was coming up with some weird warnings littered all over my tests, and with some Googling, some other people seemed to have it too.
 
-Things you may want to cover:
+https://github.com/rails/rails/issues/10507
 
-* Ruby version
+```
+/Users/maxwell/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/core.rb:103: warning: already initialized constant #<Module:0x007fbb60919038>::AttrNames
+/Users/maxwell/.rvm/gems/ruby-2.0.0-p247/gems/activerecord-4.0.0/lib/active_record/core.rb:103: warning: previous definition of AttrNames was here
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+After doing some real yak shaving, I realized that it was having the combo of both the will_paginate and groupdate gems in my Gemfile.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To see the errors for yourself.
+
+```
+bundle
+rake db:migrate
+
+bundle && rails r "Post.first"
+
+```
+
+Then, you will see the warning
+
+if you comment out either of the gems and re-run
+
+```
+bundle && rails r "Post.first"
+
+```
+
+no warnings!
+
+
+Not sure of exactly WHY, but at least now I know WHO :)
